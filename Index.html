@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Murray Company Limited — Connectivity, Done Right</title>
+  <meta name="description" content="Murray Company Limited: connectivity, brand systems, and precision execution." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0b0b0c; --ink:#f5f7fb; --muted:#9aa3af; --card:#121316; --accent:#7dd3fc; }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+    .wrap{max-width:960px;margin:0 auto;padding:48px 20px}
+    .card{background:var(--card);border-radius:20px;padding:28px 24px;border:1px solid #1f232a;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    h1{font-weight:800;margin:0 0 12px;font-size:clamp(28px,4vw,44px)}
+    p{margin:0 0 14px;line-height:1.6}
+    .pill{display:inline-block;padding:6px 12px;border-radius:999px;background:#0f172a;border:1px solid #1f2937;color:var(--muted);font-size:12px;letter-spacing:.4px;text-transform:uppercase}
+    .grid{display:grid;gap:14px;margin-top:18px}
+    @media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+    a.button{display:inline-block;margin-top:14px;padding:12px 18px;border-radius:12px;border:1px solid #273244;background:#111826;color:var(--ink);text-decoration:none;font-weight:600}
+    a.button:hover{background:#151c2b}
+    .muted{color:var(--muted)}
+    footer{margin-top:22px;color:var(--muted);font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <span class="pill">Murray Company Limited</span>
+      <h1>Connectivity • Design • Execution</h1>
+      <p class="muted">Public-facing sole proprietorship. We ship clean systems and brand experiences fast.</p>
+
+      <div class="grid">
+        <div>
+          <h3>What we do</h3>
+          <p>Digital brand systems, legal-grade docs, and operational toolchains tuned for speed and trust.</p>
+        </div>
+        <div>
+          <h3>Work with us</h3>
+          <p>Email: <a href="mailto:MurrayCompanyLimited@gmail.com">MurrayCompanyLimited@gmail.com</a><br>
+             Voice/SMS: (513) 393-9217<br>
+             Mailing: General Delivery, Marietta, OH 45750-9999</p>
+        </div>
+      </div>
+
+      <a class="button" href="https://whitemarketunlimited.org" target="_blank">White Market Unlimited PMA</a>
+      <a class="button" href="https://donniedictionary.com" target="_blank">Donnie Dictionary</a>
+      <footer>© <span id="y"></span> Murray Company Limited • Established 2020 • Born 1970</footer>
+    </div>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
